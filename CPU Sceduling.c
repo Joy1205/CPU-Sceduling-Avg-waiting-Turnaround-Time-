@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<unistd.h>
 #include<pthread.h>
-#include<fcnlt.h>
+#include<fcntl.h>
 #include<sys/types.h>
 #include<sys/stat.h>
 int main()
