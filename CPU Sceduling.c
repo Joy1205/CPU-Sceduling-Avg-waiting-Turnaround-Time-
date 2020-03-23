@@ -16,8 +16,13 @@ scanf("%d",&n);
 remaining=n;
 for(count=0;count<n;count++)
 {
-printf("Enter Arrival Time for process P%d:count+1");
+printf("Enter Arrival Time for process P%d:"count+1);
 scanf("%d",&art[count]);
+  if(art<3)
+  {
+    printf("\n\n Please Enter Arrival Time 3 or more than 3\n\n");
+    exit(0);
+  }
 printf("Enter Burst  Time for process P%d: count+1");
 scanf("%d",&art[count]);
 }
