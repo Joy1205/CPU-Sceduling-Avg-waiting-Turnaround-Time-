@@ -9,7 +9,7 @@ int main()
 {
 int count,i,n;
 int wt=0,tart=0.art[10],bt[10],rt[10];
-int flag=0,tq=10;
+int flag=0,tq;
 int time, ramaining;
 printf("Enter the total number of processs:\n");
 scanf("%d",&n);
