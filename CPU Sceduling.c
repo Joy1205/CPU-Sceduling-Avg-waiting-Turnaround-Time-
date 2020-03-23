@@ -21,7 +21,7 @@ scanf("%d",&art[count]);
 printf("Enter Burst  Time for process P%d: count+1");
 scanf("%d",&art[count]);
 }
-printf("Enter time quantum:%d",tq);
+printf("Enter time quantum:%d");
 printf("Process\t Turnnaround Time\t Wating Time"\n);
 for(time=0;count; remaining=0;)
 {
