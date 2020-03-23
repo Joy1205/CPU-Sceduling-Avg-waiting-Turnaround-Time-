@@ -27,9 +27,9 @@ scanf("%d",&bt[count]);
 }
 printf("Enter time quantum:%d");
 printf("Process\t Turnnaround Time\t Wating Time\n");
-for(time=0,count, remaining!=0;)
+for(time=0,count; remaining!=0;)
 {
-if([count]<=tq && [count]>0)
+if(rt[count]<=tq && rt[count]>0)
 {
 time+=rt[count];
 rt[count]=0;
