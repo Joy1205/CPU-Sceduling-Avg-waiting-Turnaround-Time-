@@ -1,29 +1,28 @@
 #include<stdio.h>
 #include<conio.h>
 #include<unistd.h>
-#include<pthread.h>
 #include<fcntl.h>
 #include<sys/types.h>
 #include<sys/stat.h>
 int main()
 {
 int count,i,n;
-int wt=0,tart=0.art[10],bt[10],rt[10];
+int wt=0,tart=0,art[10],bt[10],rt[10];
 int flag=0,tq;
-int time, ramaining;
+int time, remaining;
 printf("Enter the total number of processs:\n");
 scanf("%d",&n);
 remaining=n;
 for(count=0;count<n;count++)
 {
-printf("Enter Arrival Time for process P%d:"count+1);
+printf("Enter Arrival Time for process P%d:",count+1);
 scanf("%d",&art[count]);
   if(art<3)
   {
     printf("\n\n Please Enter Arrival Time 3 or more than 3\n\n");
     exit(0);
   }
-printf("Enter Burst  Time for process P%d:" count+1);
+printf("Enter Burst  Time for process P%d:",count+1);
 scanf("%d",&bt[count]);
 }
 printf("Enter time quantum:%d");
