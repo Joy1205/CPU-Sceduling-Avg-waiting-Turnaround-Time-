@@ -35,14 +35,14 @@ if(rt[count]<=tq && rt[count]>0)
 {
 time+=rt[count];
 rt[count]=0;
-flag=0;
+flag=1;
 }
 else if(rt[count]>0)
 {
 rt[count]-=tq;
 time+=tq;
 }
-if(rt[count]==0 && flag==0)
+if(rt[count]==0 && flag==1)
 {
 remaining--;
 printf("P[%d]\t%d\t%d\n",count+1,time-art[count],time-art[count]-bt[count]);
@@ -58,6 +58,6 @@ else
 count=0;
 }
 printf("Average wating time=%f\n", wt*1.0/n);
-printf("Average turnoround time=%f\n", tart*1.0/n);
+printf("Average turnoround time=%f", tart*1.0/n);
 return 0;
 }
