@@ -45,7 +45,7 @@ time+=tq;
 if(rt[count]==0 && flag==1)
 {
 remaining--;
-printf("P[%d]\t%d\t%d\n",count+1,time-art[count],time-art[count]-bt[count]);
+printf("P[%d]\t%d\t\t%d\n",count+1,time-art[count],time-art[count]-bt[count]);
 wt+=time-art[count]-bt[count];
 tart+=time-art[count];
 flag=0;
