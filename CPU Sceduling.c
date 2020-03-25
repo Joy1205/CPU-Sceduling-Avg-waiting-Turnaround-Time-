@@ -17,13 +17,14 @@ for(count=0;count<n;count++)
 {
 printf("Enter Arrival Time for process P%d:",count+1);
 scanf("%d",&art[count]);
-  if(art<3)
+  if(art[count]<3)
   {
     printf("\n\n Please Enter Arrival Time 3 or more than 3\n\n");
     exit(0);
   }
 printf("Enter Burst  Time for process P%d:",count+1);
 scanf("%d",&bt[count]);
+  rt[count]=bt[count];
 }
 printf("Enter time quantum:%d");
 printf("Process\t Turnnaround Time\t Wating Time\n");
@@ -54,7 +55,8 @@ else if(art[count+1]<=time)
 count++;
 else
 count=0;
-printf("Average wating time=%f\n, wt*1.0/n);
-printf("Average turnoround time=%f\n, tart*1.0/n);
+}
+printf("Average wating time=%f\n", wt*1.0/n);
+printf("Average turnoround time=%f\n", tart*1.0/n);
 return 0;
 }
