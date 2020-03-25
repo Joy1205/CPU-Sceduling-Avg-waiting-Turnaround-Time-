@@ -26,9 +26,10 @@ printf("Enter Burst  Time for process P%d:",count+1);
 scanf("%d",&bt[count]);
   rt[count]=bt[count];
 }
-printf("Enter time quantum:%d");
+printf("Enter time quantum:");
+  scanf("%d",&tq);
 printf("Process\t Turnnaround Time\t Wating Time\n");
-for(time=0,count; remaining!=0;)
+for(time=0,count=0; remaining!=0;)
 {
 if(rt[count]<=tq && rt[count]>0)
 {
