@@ -6,7 +6,7 @@
 #include<sys/stat.h>
 int main()
 {
-int count,i,n;
+int count,n;
 int wt=0,tart=0,art[10],bt[10],rt[10];
 int flag=0,tq;
 int time, remaining;
@@ -57,7 +57,7 @@ count++;
 else
 count=0;
 }
-printf("Average wating time=%f\n", wt*1.0/n);
-printf("Average turnoround time=%f", tart*1.0/n);
+printf("Average waiting time=%f\n", wt*1.0/n);
+printf("Average turnaround time=%f", tart*1.0/n);
 return 0;
 }
