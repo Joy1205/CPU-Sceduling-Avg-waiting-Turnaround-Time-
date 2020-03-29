@@ -10,7 +10,7 @@ int count,n;
 int wt=0,tart=0,art[10],bt[10],rt[10];
 int flag=0,tq;
 int time, remaining;
-printf("Enter the total number of processs:\n");
+printf("Enter the total number of process:\n");
 scanf("%d",&n);
 remaining=n;
 for(count=0;count<n;count++)
@@ -28,7 +28,7 @@ scanf("%d",&bt[count]);
 }
 printf("Enter time quantum:");
   scanf("%d",&tq);
-printf("Process\t Turnnaround Time\t Wating Time\n");
+printf("Process\t Turnaround Time\t Waiting Time\n");
 for(time=0,count=0; remaining!=0;)
 {
 if(rt[count]<=tq && rt[count]>0)
